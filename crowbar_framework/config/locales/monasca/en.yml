@@ -20,12 +20,16 @@ en:
       edit_attributes:
         database_instance: 'Database Instance'
         keystone_instance: 'Keystone'
-        api_header: 'API Settings'
+        api_header: 'API settings'
         api:
           bind_host: 'Address'
           bind_port: 'Port'
           processes: 'Number of processes'
           threads: 'Number of concurrent threads'
+          log_level: 'Log level'
+        log_api_header: 'Log API settings'
+        log_api:
+          log_level: 'Log level'
         metric_agent_header: 'Metrics Agent Settings'
         metric_agent:
           monasca_url: 'Monasca URL'

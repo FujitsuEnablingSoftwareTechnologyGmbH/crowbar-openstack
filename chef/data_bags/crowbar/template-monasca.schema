@@ -67,7 +67,8 @@
                 "bind_port": { "required": true, "type": "int" },
                 "processes": { "required": true, "type": "int" },
                 "ssl": { "required": true, "type": "bool" },
-                "threads": { "required": true, "type": "int" }
+                "threads": { "required": true, "type": "int" },
+                "log_level": { "type": "str", "required": true }
               }
             },
             "log_api": {
@@ -75,7 +76,8 @@
               "type": "map",
               "mapping": {
                 "port": { "required": true, "type": "int" },
-                "ssl": { "required": true, "type": "bool" }
+                "ssl": { "required": true, "type": "bool" },
+                "log_level": { "type": "str", "required": true }
               }
             },
             "master": {

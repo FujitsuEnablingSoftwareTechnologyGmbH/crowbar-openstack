@@ -39,11 +39,13 @@
         "bind_port": 8070,
         "processes": 3,
         "ssl": false,
-        "threads": 10
+        "threads": 10,
+        "log_level": "INFO"
       },
       "log_api": {
         "port": 5607,
-        "ssl": false
+        "ssl": false,
+        "log_level": "INFO"
       },
       "master": {
         "influxdb_mon_api_password": "",

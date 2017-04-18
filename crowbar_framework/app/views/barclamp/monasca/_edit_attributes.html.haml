@@ -10,7 +10,7 @@
 
       = boolean_field %w(metric_agent system_only)
       = string_field %w(metric_agent log_dir)
-      = select_field %w(metric_agent log_level), :collection => :log_levels
+      = select_field %w(metric_agent log_level), :collection => :metric_agent_log_levels
       = integer_field %w(metric_agent statsd_port)
       = integer_field %w(metric_agent check_frequency)
       = integer_field %w(metric_agent num_collector_threads)
@@ -20,6 +20,18 @@
       = integer_field %w(metric_agent max_measurement_buffer_size)
       = integer_field %w(metric_agent backlog_send_rate)
       = integer_field %w(metric_agent amplifier)
+
+    %fieldset
+      %legend
+        = t(".api_header")
+
+      = select_field %w(api log_level), :collection => :api_log_levels
+
+    %fieldset
+      %legend
+        = t(".log_api_header")
+
+      = select_field %w(log_api log_level), :collection => :api_log_levels
 
     %fieldset
       %legend

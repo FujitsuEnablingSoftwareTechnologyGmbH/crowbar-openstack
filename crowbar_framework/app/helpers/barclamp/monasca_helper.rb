@@ -16,13 +16,28 @@
 
 module Barclamp
   module MonascaHelper
-    def log_levels(selected)
+    def metric_agent_log_levels(selected)
       options_for_select(
         [
           ["ERROR", "ERROR"],
           ["WARNING", "WARNING"],
           ["INFO", "INFO"],
           ["DEBUG", "DEBUG"]
+        ],
+        selected.to_s
+      )
+    end
+
+    def api_log_levels(selected)
+      options_for_select(
+        [
+          ["CRITICAL", "CRITICAL"],
+          ["FATAL", "FATAL"],
+          ["ERROR", "ERROR"],
+          ["WARNING", "WARNING"],
+          ["INFO", "INFO"],
+          ["DEBUG", "DEBUG"],
+          ["TRACE", "TRACE"]
         ],
         selected.to_s
       )
