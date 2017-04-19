@@ -32,7 +32,6 @@ module Barclamp
       options_for_select(
         [
           ["CRITICAL", "CRITICAL"],
-          ["FATAL", "FATAL"],
           ["ERROR", "ERROR"],
           ["WARNING", "WARNING"],
           ["INFO", "INFO"],
